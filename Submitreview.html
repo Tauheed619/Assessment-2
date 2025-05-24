@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Submit Review</title>
+  <link rel="stylesheet" href="Fortnite.css">
+</head>
+<body>
+  <header>
+    <h1>Submit Your Fortnite Review</h1>
+    <nav>
+      <ul>
+        <li><a href="Fortnite.html">Home</a></li>
+        <li><a href="game.html">About Fortnite</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="submitreview.html">Submit Review</a></li>
+        <li><a href="news.html">News</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>We value your feedback!</h2>
+      <form action="#" method="POST">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="rating">Rating:</label>
+        <select id="rating" name="rating" required>
+          <option value="5">5 - Excellent</option>
+          <option value="4">4 - Great</option>
+          <option value="3">3 - Good</option>
+          <option value="2">2 - Fair</option>
+          <option value="1">1 - Poor</option>
+        </select>
+
+        <label for="review">Review:</label>
+        <textarea id="review" name="review" rows="5" required></textarea>
+
+        <button type="submit">Submit Review</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Fortnite Hub. All rights reserved.</p>
+  </footer>
+</body>
+</html>
