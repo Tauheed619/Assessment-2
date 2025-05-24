@@ -1,0 +1,232 @@
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1e1e2f;
+  color: #ffffff;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+header {
+  background-color: #282a36;
+  padding: 1em 0;
+  text-align: center;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  color: #50fa7b;
+  transition: color 0.3s ease;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1em;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+nav ul li a {
+  color: #f8f8f2;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5em 1em;
+  background-color: #44475a;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #6272a4;
+  transform: scale(1.05);
+}
+
+main {
+  padding: 2em;
+  max-width: 1200px;
+  margin: auto;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 2em;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.banner-img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1em;
+  transition: transform 0.3s ease;
+}
+
+.banner-img:hover {
+  transform: scale(1.02);
+}
+
+h2 {
+  color: #ff79c6;
+  border-bottom: 2px solid #ff79c6;
+  padding-bottom: 0.3em;
+  margin-top: 2em;
+  transition: color 0.3s;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5em;
+  margin-top: 1em;
+}
+
+.card {
+  background-color: #343746;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 1em;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 121, 198, 0.6);
+}
+
+.card img {
+  width: 100%;
+  max-height: 200px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 0.5em;
+  object-fit: contain;
+  transition: transform 0.3s;
+}
+
+.card img:hover {
+  transform: scale(1.05);
+}
+
+.section-img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1em;
+  transition: transform 0.3s ease;
+}
+
+.section-img:hover {
+  transform: scale(1.02);
+}
+
+video {
+  width: 100%;
+  max-width: 800px;
+  margin: 2em auto;
+  display: block;
+  border: 3px solid #ff79c6;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+video:hover {
+  transform: scale(1.01);
+}
+
+form {
+  max-width: 600px;
+  margin: auto;
+  background-color: #343746;
+  padding: 2em;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  animation: fadeInUp 1s ease-in-out;
+}
+
+form label {
+  display: block;
+  margin-top: 1em;
+  font-weight: bold;
+  color: #ffb86c;
+}
+
+form input[type="text"],
+form textarea,
+form select {
+  width: 100%;
+  padding: 0.75em;
+  border-radius: 5px;
+  border: none;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  background-color: #44475a;
+  color: #f8f8f2;
+  font-size: 1em;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+  outline: none;
+  transform: scale(1.01);
+  background-color: #50536c;
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+form button {
+  background-color: #50fa7b;
+  color: #1e1e2f;
+  padding: 0.75em 1.5em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s;
+}
+
+form button:hover {
+  background-color: #3cf076;
+  transform: scale(1.05);
+}
+
+footer {
+  background-color: #282a36;
+  color: #f8f8f2;
+  text-align: center;
+  padding: 1em 0;
+  margin-top: 3em;
+  animation: fadeIn 2s ease-in-out;
+}
